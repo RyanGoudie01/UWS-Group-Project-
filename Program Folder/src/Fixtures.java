@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Fixtures {
 
-    private String[] fixtures;
+    private final String[]fixtures;
 
     public Fixtures(String[] fixtures){
         this.fixtures=fixtures;

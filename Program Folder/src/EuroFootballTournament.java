@@ -13,9 +13,9 @@ public class EuroFootballTournament{
             System.out.println("--- Euro 2021 Tournament ---");
             System.out.println("1: Display Teams");
             System.out.println("2: Display Fixtures");
-            System.out.println("3: Simulate Matches");
+            System.out.println("3: Simulate Tournament");
             System.out.println("4: Quit");
-            option = Input.getInteger("option: ");
+            option = Input.getInteger("Option: ");
             switch (option) {
                 case 1:
                     Teams.displayTeams();
@@ -27,12 +27,14 @@ public class EuroFootballTournament{
                     fixtures.simulateMatches();
                     break;
                 case 4:
-                    System.out.println("quitting program");
+                    System.out.println("Quitting Program");
+                    System.out.println("Thank You For Using our Euro Tournament Simulator !");
                     System.exit(0);
                     break;
             }
 
         }while (option != 0) ;
+
     }
 
     private static String[] readFile() throws IOException {
